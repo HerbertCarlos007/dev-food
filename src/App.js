@@ -7,8 +7,9 @@ import { Container, Menu, PageBody } from './AppStyleds'
 import HomeScreen from './pages/HomeScreen';
 import Tela2Screen from './pages/Tela2Screen';
 
-import MenuItem from './components/MenuItem'
 import PrivateRoute from './components/PrivateRoute';
+import MenuItem from './components/MenuItem'
+import Cart from './components/Cart';
 
 export default () => {
     const name = useSelector(state => state.user.name);
@@ -41,6 +42,7 @@ export default () => {
                         </Route>
                     </Switch>
                 </PageBody>
+                <Cart />
 
             </Container>
         </BrowserRouter>
