@@ -27,7 +27,7 @@ export default () => {
     }, [])
 
     useEffect(() => {
-
+        
     }, [activeCategory])
 
     return (
